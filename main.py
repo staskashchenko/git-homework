@@ -65,7 +65,7 @@ while run:
         print()
     elif selected_code == '2':
         length = input("How many digits would you like in the PIN?: ")
-        if int(length) in [4,5,6,7,8,9,10]:
+        if (length) in ['4','5','6','7','8','9','10']:
             print(pin_number_generator(int(length)))
         else:
             print(pin_number_generator(4))

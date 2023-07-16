@@ -11,7 +11,7 @@ def pin_number_generator():
     import random
     all_digits = string.digits
     pin = []
-    for _ in range(4):
+    for _ in range(5):
         pin.append(random.choice(all_digits))
     return "".join(pin)
 

@@ -64,6 +64,8 @@ while run:
         print(license_plate_generator())
         print()
     elif selected_code == '2':
+        length = input("How many digits would you like in the PIN?: ")
+        pin_number_generator(length)
         print(pin_number_generator())
         print()
     elif selected_code == '3':

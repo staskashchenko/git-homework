@@ -11,10 +11,10 @@ def license_plate_generator():
     all_digits = string.digits
 
     for digit in range(3):
-        license_plate.append(random.choice(all_digits))
-
-    for letter in range(4):
         license_plate.append(random.choice(upper_case_letters))
+
+    for letter in range(3):
+        license_plate.append(random.choice(all_digits))
     return "".join(license_plate)
 
 def pin_number_generator():

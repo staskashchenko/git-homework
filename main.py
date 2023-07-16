@@ -6,12 +6,13 @@
 def license_plate_generator():
     pass
 
-def pin_number_generator():
+def pin_number_generator(length):
     import string
     import random
+
     all_digits = string.digits
     pin = []
-    for _ in range(5):
+    for _ in range(length):
         pin.append(random.choice(all_digits))
     return "".join(pin)
 

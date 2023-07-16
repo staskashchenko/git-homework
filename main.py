@@ -31,7 +31,10 @@ while run:
         print()
     elif selected_code == '2':
         length = input("How many digits would you like in the PIN?: ")
-        pin_number_generator(int(length))
+        if int(length) in [4,5,6,7,8,9,10]:
+            pin_number_generator(int(length))
+        else:
+            pin_number_generator(4)
         print()
     elif selected_code == '3':
         valid_email_generator()

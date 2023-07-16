@@ -18,7 +18,13 @@ def license_plate_generator():
     return "".join(license_plate)
 
 def pin_number_generator():
-    pass
+    import string
+    import random
+    all_digits = string.digits
+    pin = []
+    for _ in range(4):
+        pin.append(random.choice(all_digits))
+    return "".join(pin)
 
 def valid_email_generator():
     pass

@@ -20,10 +20,10 @@ def license_plate_generator():
         license_plate.append(random.choice(all_digits))
     return "".join(license_plate)
 
-def pin_number_generator():
+def pin_number_generator(length):
     all_digits = string.digits
     pin = []
-    for _ in range(5):
+    for _ in range(length):
         pin.append(random.choice(all_digits))
     return "".join(pin)
 
@@ -65,8 +65,7 @@ while run:
         print()
     elif selected_code == '2':
         length = input("How many digits would you like in the PIN?: ")
-        pin_number_generator(length)
-        print(pin_number_generator())
+        print(pin_number_generator(length))
         print()
     elif selected_code == '3':
         print(valid_email_generator())
@@ -75,4 +74,3 @@ while run:
         run = False
     else:
         print('Invalid input. Please enter a number from 1-4.')
-

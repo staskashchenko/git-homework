@@ -64,10 +64,10 @@ while run:
         print(license_plate_generator())
         print()
     elif selected_code == '2':
-        pin_number_generator()
+        print(pin_number_generator())
         print()
     elif selected_code == '3':
-        valid_email_generator()
+        print(valid_email_generator())
         print()
     elif selected_code == '4':
         run = False

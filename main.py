@@ -2,9 +2,20 @@
 # license plate generator
 # pin number generator
 # valid email password generator
+import random
+import string
 
 def license_plate_generator():
-    pass
+    license_plate = []
+    upper_case_letters = string.ascii_uppercase
+    all_digits = string.digits
+
+    for digit in range(3):
+        license_plate.append(random.choice(all_digits))
+
+    for letter in range(4):
+        license_plate.append(random.choice(upper_case_letters))
+    return "".join(license_plate)
 
 def pin_number_generator():
     pass
